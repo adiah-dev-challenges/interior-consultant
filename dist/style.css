@@ -129,9 +129,18 @@ select {
   padding: 0.5em;
   border: 1px solid var(--clr-light);
 }
+@media (min-width: 43.75em) {
+  .primary-header {
+    margin-inline: auto;
+    width: 90%;
+    max-width: 80.375rem;
+    margin-bottom: 9.0625rem;
+  }
+}
 
 .primary-navigation {
   display: flex;
+  gap: 5.375rem;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -311,18 +320,50 @@ select {
   }
 }
 
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 43.75em) {
+  .page-wrapper {
+    flex-direction: row;
+    align-items: center;
+    gap: 7.25rem;
+    margin-inline: auto;
+    width: 90%;
+    max-width: 80.375rem;
+    margin-bottom: 6rem;
+  }
+}
+
 .description {
   margin-bottom: 1.5rem;
+}
+@media (min-width: 43.75em) {
+  .description {
+    width: 40%;
+  }
 }
 .description__title {
   font-size: var(--fs-700);
   font-family: var(--ff-title);
   margin-bottom: 1.5rem;
 }
+@media (min-width: 43.75em) {
+  .description__title {
+    font-size: var(--fs-800);
+  }
+}
 .description__body {
   width: 70%;
   line-height: 1.4;
   margin-bottom: 1.5rem;
+}
+@media (min-width: 43.75em) {
+  .description__body {
+    font-size: var(--fs-600);
+    width: 100%;
+  }
 }
 .description__link {
   text-decoration: none;
@@ -335,7 +376,17 @@ select {
   position: absolute;
   right: -2rem;
 }
+@media (min-width: 43.75em) {
+  .description__link {
+    font-size: var(--fs-500);
+  }
+}
 
+@media (min-width: 43.75em) {
+  .image {
+    width: 60%;
+  }
+}
 .image__bg {
   position: relative;
 }
@@ -351,6 +402,12 @@ select {
   position: relative;
   top: -3rem;
   left: 2.5rem;
+}
+@media (min-width: 43.75em) {
+  .profile-card {
+    width: 60%;
+    transform: translateX(50%);
+  }
 }
 .profile-card-top {
   display: grid;
@@ -369,16 +426,32 @@ select {
   font-size: var(--fs-300);
   align-self: end;
 }
+@media (min-width: 43.75em) {
+  .profile-card-top__name {
+    font-size: var(--fs-400);
+  }
+}
 .profile-card-top__job {
   grid-area: job;
   font-size: var(--fs-200);
   color: #828282;
+}
+@media (min-width: 43.75em) {
+  .profile-card-top__job {
+    font-size: var(--fs-300);
+  }
 }
 .profile-card__title {
   font-family: var(--ff-title);
   font-size: var(--fs-500);
   font-weight: 700;
   line-height: 1.3;
+}
+@media (min-width: 43.75em) {
+  .profile-card__title {
+    font-size: var(--fs-600);
+    width: 75%;
+  }
 }
 
 .footer {

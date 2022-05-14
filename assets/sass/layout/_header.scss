@@ -17,10 +17,18 @@
 		 border: 1px solid var(--clr-light);
 	}
 
+	@include abs.breakpoint(medium) {
+		margin-inline: auto;
+		width: 90%;
+		max-width: abs.rem(1286);
+		margin-bottom: 9.0625rem;
+	}
+
 }
 
 .primary-navigation {
 	display: flex;
+	gap: 5.375rem;
 	list-style: none;
 	padding: 0;
 	margin: 0;
