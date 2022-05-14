@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+      maximum-scale=5"
+    />
+
+    <link rel="icon" href="assets/devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
+    <link rel="stylesheet" href="dist/style.css">
+    <script src="./assets/js/navigation.js" defer></script>
+
+    <title>Interior Consultant</title>
+  </head>
+  <body>
+    <header class="primary-header">
+      <!-- my ::before -->
+      <a class="primary-header__button" href="#">This Interior</a>
+      <button id="nav-toggle" class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span><span id="toggle-icon" class="material-icons md-light md-36">menu</span></button>
+      <nav>
+        <ul id="primary-navigation" class="primary-navigation" data-visible="false">
+          <li><a class="nav-link nav-link--active" href="#">Home</a></li>
+          <li><a class="nav-link" href="#">Collection</a></li>
+          <li><a class="nav-link" href="#">About</a></li>
+          <li><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-wrapper">
+      <section class="description">
+        <h1 class="description__title">Modern interior</h1>
+        <p class="description__body">
+          A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.
+        </p>
+        <a href="#" class="description__link">Read more <span class="material-icons">east</span></a>
+      </section>
+      <section class="image">
+        <img src="./assets/img/photo1.png" alt="" class="image__bg">
+        <div class="profile-card">
+          <div class="profile-card-top">
+            <img src="./assets//img/photo2.png" alt="" class="profile-card-top__img">
+            <h2 class="profile-card-top__name">Aliza Webber</h2>
+            <p class="profile-card-top__job">Interior designer</p>
+          </div>
+          <p class="profile-card__title">Designed in 2020 by Aliza Webber</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <footer class="footer">
+        <p class="footer__attribution">
+          created by <a href="https://devchallenges.io/portfolio/nathanieladiah" class="footer__link">nathanieladiah</a> - devchallenges.io
+        </p>
+      </footer>
+    </footer>
+
+  </body>
+</html>

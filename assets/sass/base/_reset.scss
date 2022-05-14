@@ -1,0 +1,89 @@
+// Box sizing
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+// Reset margins
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+	margin: 0;
+}
+
+// Set initial font weights
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-weight: 400;
+}
+
+// Set up the body
+body {
+	font-family: var(--ff-sans);
+	font-size: var(--fs-400);
+	font-weight: 500;
+	background-color: var(--clr-dark);
+	color: var(--clr-light);
+	line-height: 1.5;
+	min-height: 100vh;
+	padding: 1.5rem 0.75rem;
+
+	overflow-x: hidden;
+
+	&.noscroll {
+		overflow: hidden;
+	}
+}
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: var(--clr-gray); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+// Make images easier to work with
+
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+// make form elements easier to work with
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+// Remove animations for people who've turned them off
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
